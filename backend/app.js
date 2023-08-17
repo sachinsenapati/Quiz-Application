@@ -1,4 +1,6 @@
 const express = require("express");
+const connecton = require("./config/db");
+connecton();
 const app = express();
 
 app.get("/", (req, res) => {
