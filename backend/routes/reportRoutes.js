@@ -4,7 +4,7 @@ const {
   getAllAttempts,
   getAllAttemptsByUser,
 } = require("../controllers/reportControllers");
-const authMiddleware = require("../middlewares/authMiddleware");
+const authMiddleware = require("../middlewares/authMiddleWare");
 
 router.post("/addReport", authMiddleware, addReport);
 router.post("/getAllAttempts", authMiddleware, getAllAttempts);
