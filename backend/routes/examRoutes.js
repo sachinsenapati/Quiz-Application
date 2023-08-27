@@ -9,7 +9,7 @@ const {
   deleteQuestionFromExam,
   editQuestionInExam,
 } = require("../controllers/examControllers");
-const authMiddleware = require("../middlewares/authMiddleware");
+const authMiddleware = require("../middlewares/authMiddleWare");
 
 router.post("/addExam", authMiddleware, addExam);
 router.get("/getAllExams", authMiddleware, getAllExams);
