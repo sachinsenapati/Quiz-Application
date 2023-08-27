@@ -70,7 +70,8 @@ function ReportsPage() {
      }
   }
   useEffect(()=>{
-   getData()
+    getData();
+    // eslint-disable-next-line
   },[])
   return (
     <div>
