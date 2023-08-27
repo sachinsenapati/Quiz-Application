@@ -80,7 +80,8 @@ function ExamsPage() {
     }
   }
   useEffect(()=>{
-     getExamsData()
+    getExamsData();
+    // eslint-disable-next-line
   },[])
   return (
     <>

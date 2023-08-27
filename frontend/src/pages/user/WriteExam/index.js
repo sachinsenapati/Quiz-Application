@@ -98,15 +98,17 @@ const startTimer = () => {
    setIntervalId(intervalId)
 }
 useEffect(()=>{
-  if(timeUp&&view==="questions"){
-    clearInterval(intervalId)
-    calculateResult(); 
+  if (timeUp && view === "questions") {
+    clearInterval(intervalId);
+    calculateResult();
   }
+  // eslint-disable-next-line
 },[timeUp])
 useEffect(()=>{
-  if(id){
-    getExamDataById(id)
+  if (id) {
+    getExamDataById(id);
   }
+  // eslint-disable-next-line
 },[])
   return (
    examData && (

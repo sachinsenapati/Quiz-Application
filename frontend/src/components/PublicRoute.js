@@ -4,9 +4,10 @@ import { useNavigate } from 'react-router-dom'
 function PublicRoute({children}) {
   const navigate = useNavigate();
   useEffect(()=>{
-   if(localStorage.getItem('token')){
-    navigate('/');
-   }
+    if (localStorage.getItem("token")) {
+      navigate("/");
+    }
+    // eslint-disable-next-line
   },[])
   return (
     <div>

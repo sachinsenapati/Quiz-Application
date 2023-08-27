@@ -103,14 +103,14 @@ function ProtectedRoute({children}) {
     }
   }
   useEffect(()=> {
-    if(localStorage.getItem('token')){
-        if(!user){
-            getUserData();
-        }
+    if (localStorage.getItem("token")) {
+      if (!user) {
+        getUserData();
+      }
+    } else {
+      navigate("/login");
     }
-    else{
-        navigate('/login');
-    }
+    // eslint-disable-next-line
   },[])
   const activeRoute = window.location.pathname;
   const getIsActiveOrNot = (paths) => {

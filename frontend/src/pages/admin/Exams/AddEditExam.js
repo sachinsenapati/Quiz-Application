@@ -57,9 +57,10 @@ function AddEditExam() {
       }
   }
   useEffect(()=>{
-    if(id){
-      getExamDataById(id)
+    if (id) {
+      getExamDataById(id);
     }
+    // eslint-disable-next-line
   },[])
   const deleteQuestionById = async(questionId) =>{
     try{

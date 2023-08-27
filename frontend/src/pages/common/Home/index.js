@@ -31,7 +31,8 @@ function HomePage() {
     }
   }
   useEffect(()=>{
-    getExams()
+    getExams();
+    // eslint-disable-next-line
   },[])
   return (
     user && <div>

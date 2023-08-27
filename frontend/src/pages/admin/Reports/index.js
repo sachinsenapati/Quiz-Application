@@ -3,6 +3,7 @@ import PageTitle from '../../../components/PageTitle'
 import {Table, message} from 'antd'
 import { HideLoading, ShowLoading } from '../../../redux/loaderSlice'
 import { useDispatch } from 'react-redux'
+// eslint-disable-next-line
 import { getAllAttempts, getAllAttemptsByUser } from '../../../apicalls/reports'
 import moment from 'moment'
 
@@ -82,7 +83,8 @@ function AdminReportsPage() {
      }
   }
   useEffect(()=>{
-   getData(filters)
+    getData(filters);
+    // eslint-disable-next-line
   },[])
   return (
     <div>
