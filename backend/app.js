@@ -19,6 +19,7 @@ app.use("/api/reports", reportRoutes);
 app.get("/", (req, res) => {
   res.send("Hello");
 });
-app.listen(5000, () => {
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
   console.log("server is runing on port 5000");
 });
